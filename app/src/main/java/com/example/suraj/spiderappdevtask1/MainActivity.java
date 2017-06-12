@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void remove (View v)
     {
-        if (Integer.parseInt(editTxt.getText().toString())<=count)
+        if (Integer.parseInt(editTxt.getText().toString())<=count && Integer.parseInt(editTxt.getText().toString())>0 )
         {
             count--;
             arrayList.remove(Integer.parseInt(editTxt.getText().toString())-1);
